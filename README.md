@@ -1,3 +1,5 @@
-# rpgrevolu-ofrancesa-
+# RPG: A Revolução Francesa
 
-##
+## Sinopse
+
+## Diretrizes básica
