@@ -9,3 +9,9 @@ revolucionário, podendo ser desde camponeses, burgueses, soldados,
 nobres, clérigos e revolucionários.
 
 ## Diretrizes básica
+### Sistema:
+### Atributos:
+### Variáveis do Ambiente:
+
+## Cenários e Eventos:
+
