@@ -18,7 +18,7 @@ Os atributos que são utilizados no RPG são:
 indivíduos.
 * **Astúcia:** Inteligência, capacidade estratégica e de manipulação.
 * **Lealdade:** Mede a fidelidade do personagem a uma facção ou causa.
-
+Esses atributos são atributos contínuos, ou seja, numéricos.
 ### Variáveis do Ambiente:
 
 ## Cenários e Eventos:
