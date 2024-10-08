@@ -10,6 +10,8 @@ nobres, clérigos e revolucionários.
 
 ## Diretrizes básicas
 ### Sistema:
+A mecânica do jogo será baseada em decisões estratégicas que os jogadores devem tomar, refletindo as escolhas difíceis enfrentadas pelos líderes revolucionários. Através de um sistema de ”árvore de decisões”, os jogadores poderão ver as consequências de suas ações, tanto a curto quanto a longo prazo, em um ambiente que simula as tensões sociais e políticas da época.
+
 ### Atributos:
 Os atributos que são utilizados no RPG são:
 * **Influência:** Representa o poder político e social do personagem.
@@ -19,6 +21,7 @@ indivíduos.
 * **Astúcia:** Inteligência, capacidade estratégica e de manipulação.
 * **Lealdade:** Mede a fidelidade do personagem a uma facção ou causa.
 Esses atributos são atributos contínuos, ou seja, numéricos.
+
 ### Variáveis do Ambiente:
 
 ## Cenários e Eventos:
