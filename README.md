@@ -31,4 +31,10 @@ As variáveis existentes são:
 * **Guilhotina:** Em momentos de crise (Reinado do Terror, ver a seguir), personagens podem ser julgados e, dependendo de suas ações, enfrentar a guilhotina.
 
 ## Cenários e Eventos:
+Os cenários e eventos do RPG são baseados em acontecimentos históricos:
+* Queda da Bastilha.
+* Declaração dos Direitos do Homem e do Cidadão.
+* Reinado do Terror.
+* Ascensão de Napoleão.
+
 
