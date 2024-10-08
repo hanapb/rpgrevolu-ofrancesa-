@@ -24,6 +24,11 @@ indivíduos.
 Esses atributos são atributos contínuos, ou seja, numéricos.
 
 ### Variáveis do Ambiente:
+As ações dos personagens afetam como eles são vistos pela população.
+As variáveis existentes são: 
+* **Favor Popular:** pode determinar se o personagem é visto como um herói do povo ou um traidor, o que influencia seus recursos, aliados e até a sobrevivência. 
+* **Conspirações e Intrigas:** Elementos de jogo envolvendo conspirações políticas, espionagem e traição são centrais. 
+* **Guilhotina:** Em momentos de crise (Reinado do Terror, ver a seguir), personagens podem ser julgados e, dependendo de suas ações, enfrentar a guilhotina.
 
 ## Cenários e Eventos:
 
