@@ -57,4 +57,8 @@ Esse estado de coisas surgiu da urgência de proteção da Revolução, alimenta
 
 * Ascensão de Napoleão.
 
+A Era Napoleônica foi o período em que Napoleão Bonaparte esteve no governo da França, isto é, de 1799 a 1815, e foi dividida em três fases: Consulado, Império e Governo dos Cem Dias. A ascensão de Napoleão tem relação direta com a Revolução Francesa e ocorreu por meio do Golpe de 18 de Brumário.
+Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e os valores do iluminismo se consolidaram no país. Esse período também ficou marcado por conflitos da França contra outras nações europeias, como o Reino Unido, Prússia, Áustria e Rússia. Napoleão foi derrotado em 1815, na Batalha de Waterloo, sendo deposto, preso e exilado.
+
+
 
