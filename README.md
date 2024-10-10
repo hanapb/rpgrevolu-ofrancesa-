@@ -36,13 +36,14 @@ As variáveis existentes são:
 
 ## Cenários e Eventos:
 Os cenários e eventos do RPG são baseados em acontecimentos históricos:
-* Queda da Bastilha - Essa revolta foi motivada pela cobrança de altos impostos e uma temporada de fome, o que levou os cidadãos a invadir o castelo da Bastilha em 14 de julho de 1789, uma fortaleza militar e prisão, sendo um dos principais eventos que ocasionaram a Revolução Francesa.
-  A apreensão representou a resistência contra os Bourbons, a autoritária monarquia francesa. O rei Luís XVI e Maria Antonieta não eram amados pelo povo francês, tendo seu reinado terminado com decapitação na guilhotina. Mas as preocupações que levaram a uma revolução total foram muito além desses dois líderes inadequados.
-  Na década de 1780, o desemprego, a escassez de alimentos e os altos impostos deixaram os plebeus desesperados e indigentes, enquanto a rica nobreza permaneceu intocada. Quando a monarquia começou a sentir a pressão, Luís encarregou os Estados Gerais, o órgão legislativo do país, de elaborar um novo plano tributário.
-  O Terceiro Estado (a parte não nobre da assembleia) então, se separou dos nobres e do clero e exigiu uma constituição escrita. Isso resultou na criação da Assembleia Nacional. No entanto, quando Luís expulsou o ministro das Finanças, Jacques Necker, um popular não-nobre, não muito tempo depois, a resposta foi explosiva.
-  Manifestantes franceses encheram as ruas e entraram em confronto com soldados monarquistas, incendiando postos alfandegários e saqueando a cidade em busca de comida e armas. Eventualmente, a multidão que se formou saqueou o hospital militar Hôtel des Invalides antes de se concentrar em coisas maiores.
-  A multidão marchou sobre a Bastilha, onde seu governador, Bernard-Rene de Launay, se escondeu. Ele concordou em negociar com os delegados, mas os manifestantes invadiram e de Launay deu ordem para atirar na multidão.
-  Os revolucionários sofreram grandes perdas, mas acabaram tomando a fortaleza depois de várias horas.
+* Queda da Bastilha.
+
+Essa revolta foi motivada pela cobrança de altos impostos e uma temporada de fome, o que levou os cidadãos a invadir o castelo da Bastilha em 14 de julho de 1789, uma fortaleza militar e prisão, sendo um dos principais eventos que ocasionaram a Revolução Francesa. A apreensão representou a resistência contra os Bourbons, a autoritária monarquia francesa. O rei Luís XVI e Maria Antonieta não eram amados pelo povo francês, tendo seu reinado terminado com decapitação na guilhotina. Mas as preocupações que levaram a uma revolução total foram muito além desses dois líderes inadequados.
+Na década de 1780, o desemprego, a escassez de alimentos e os altos impostos deixaram os plebeus desesperados e indigentes, enquanto a rica nobreza permaneceu intocada. Quando a monarquia começou a sentir a pressão, Luís encarregou os Estados Gerais, o órgão legislativo do país, de elaborar um novo plano tributário.
+O Terceiro Estado (a parte não nobre da assembleia) então, se separou dos nobres e do clero e exigiu uma constituição escrita. Isso resultou na criação da Assembleia Nacional. No entanto, quando Luís expulsou o ministro das Finanças, Jacques Necker, um popular não-nobre, não muito tempo depois, a resposta foi explosiva.
+Manifestantes franceses encheram as ruas e entraram em confronto com soldados monarquistas, incendiando postos alfandegários e saqueando a cidade em busca de comida e armas. Eventualmente, a multidão que se formou saqueou o hospital militar Hôtel des Invalides antes de se concentrar em coisas maiores.
+A multidão marchou sobre a Bastilha, onde seu governador, Bernard-Rene de Launay, se escondeu. Ele concordou em negociar com os delegados, mas os manifestantes invadiram e de Launay deu ordem para atirar na multidão.
+Os revolucionários sofreram grandes perdas, mas acabaram tomando a fortaleza depois de várias horas.
 
 
 * Declaração dos Direitos do Homem e do Cidadão.
