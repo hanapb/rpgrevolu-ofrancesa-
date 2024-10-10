@@ -36,7 +36,7 @@ As variáveis existentes são:
 
 ## Cenários e Eventos:
 Os cenários e eventos do RPG são baseados em acontecimentos históricos:
-* Queda da Bastilha.
+* Queda da Bastilha -
 
 Essa revolta foi motivada pela cobrança de altos impostos e uma temporada de fome, o que levou os cidadãos a invadir o castelo da Bastilha em 14 de julho de 1789, uma fortaleza militar e prisão, sendo um dos principais eventos que ocasionaram a Revolução Francesa. A apreensão representou a resistência contra os Bourbons, a autoritária monarquia francesa. O rei Luís XVI e Maria Antonieta não eram amados pelo povo francês, tendo seu reinado terminado com decapitação na guilhotina. Mas as preocupações que levaram a uma revolução total foram muito além desses dois líderes inadequados.
 Na década de 1780, o desemprego, a escassez de alimentos e os altos impostos deixaram os plebeus desesperados e indigentes, enquanto a rica nobreza permaneceu intocada. Quando a monarquia começou a sentir a pressão, Luís encarregou os Estados Gerais, o órgão legislativo do país, de elaborar um novo plano tributário.
@@ -46,17 +46,17 @@ A multidão marchou sobre a Bastilha, onde seu governador, Bernard-Rene de Launa
 Os revolucionários sofreram grandes perdas, mas acabaram tomando a fortaleza depois de várias horas.
 
 
-* Declaração dos Direitos do Homem e do Cidadão.
+* Declaração dos Direitos do Homem e do Cidadão -
 
 A Declaração Universal dos Direitos Humanos é um documento fundamental na história global, que criou diretrizes comuns para a proteção dos direitos humanos, devendo ser respeitadas por todos os povos e nações. Redigida por representantes de diversas origens jurídicas e culturais, a DUDH foi oficialmente proclamada pela Assembleia Geral das Nações Unidas, em Paris, no dia 10 de dezembro de 1948, através da Resolução 217 A (III) da Assembleia. 
 Essa declaração surgiu, em grande parte, em resposta à tragédia humanitária causada pela Segunda Guerra Mundial (1939-1945). Este período marcante da história expôs ao mundo situações de genocídio que ocorreram além dos campos de batalha. Milhões de pessoas foram vítimas de um verdadeiro extermínio, simplesmente por existirem e por serem quem eram. Judeus, crianças, mulheres, negros, homossexuais, idosos e camponeses tiveram suas vidas interrompidas de forma brutal.
 
-* Reinado do Terror.
+* Reinado do Terror -
 
 O Reinado do Terror (1792-1794) é lembrado pelas perseguições religiosas e políticas, por conflitos civis e pelas execuções realizadas na guilhotina. Durante esse período, a França estava sob o comando dos jacobinos, que eram vistos como os mais extremistas entre os revolucionários, fazendo com que essa fase também fosse chamada de "Terror Jacobino". 
 Esse estado de coisas surgiu da urgência de proteção da Revolução, alimentada por uma paranoia que enxergava inimigos a cada esquina. O Terror deu início a sua atuação em 22 de julho de 1789, quando o temor de um plano da aristocracia para provocar uma fome generalizada levou a população de Paris a assassinar brutalmente o ministro real Joseph Foullon e seu enteado. Naquele mesmo verão, ocorreu o conhecido Grande Medo, quando rumores sobre ações contrarrevolucionárias da aristocracia levaram agricultores aterrorizados a atacarem os castelos de seus senhores feudais.
 
-* Ascensão de Napoleão.
+* Ascensão de Napoleão -
 
 A Era Napoleônica foi o período em que Napoleão Bonaparte esteve no governo da França, isto é, de 1799 a 1815, e foi dividida em três fases: Consulado, Império e Governo dos Cem Dias. A ascensão de Napoleão tem relação direta com a Revolução Francesa e ocorreu por meio do Golpe de 18 de Brumário.
 Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e os valores do iluminismo se consolidaram no país. Esse período também ficou marcado por conflitos da França contra outras nações europeias, como o Reino Unido, Prússia, Áustria e Rússia. Napoleão foi derrotado em 1815, na Batalha de Waterloo, sendo deposto, preso e exilado.
