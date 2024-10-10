@@ -38,6 +38,9 @@ As variáveis existentes são:
 Os cenários e eventos do RPG são baseados em acontecimentos históricos:
 * Queda da Bastilha.
 * Declaração dos Direitos do Homem e do Cidadão.
+A Declaração Universal dos Direitos Humanos é um documento fundamental na história global, que criou diretrizes comuns para a proteção dos direitos humanos, devendo ser respeitadas por todos os povos e nações. Redigida por representantes de diversas origens jurídicas e culturais, a DUDH foi oficialmente proclamada pela Assembleia Geral das Nações Unidas, em Paris, no dia 10 de dezembro de 1948, através da Resolução 217 A (III) da Assembleia. 
+Essa declaração surgiu, em grande parte, em resposta à tragédia humanitária causada pela Segunda Guerra Mundial (1939-1945). Este período marcante da história expôs ao mundo situações de genocídio que ocorreram além dos campos de batalha. Milhões de pessoas foram vítimas de um verdadeiro extermínio, simplesmente por existirem e por serem quem eram. Judeus, crianças, mulheres, negros, homossexuais, idosos e camponeses tiveram suas vidas interrompidas de forma brutal.
+
 * Reinado do Terror.
 * Ascensão de Napoleão.
 
