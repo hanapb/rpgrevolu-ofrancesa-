@@ -1,7 +1,7 @@
 # RPG: A Revolução Francesa
   O objetivo do trabalho é juntar os conhecimentos dos alunos na disciplina Programação Orientada a Objetos e História I, resultando num jogo de RPG temático sobre Revolução Francesa. Este projeto de jogo busca explorar as complexidades e os dilemas morais que surgiram durante esse período turbulento, permitindo que os jogadores experimentem a tensão entre liberdade, igualdade e fraternidade, conceitos que foram centrais na ideologia revolucionária.
 
-![Revolução Francesa]([URL da imagem](https://pt.pngtree.com/freepng/bastille-day-square-banner-design-icon-image_15751460.html))
+![Revolução Francesa](https://pt.pngtree.com/freepng/bastille-day-square-banner-design-icon-image_15751460.html)](https://www.onlineescola.com.br/2024/06/os-legados-da-revolucao-francesa-para.html)
 
 ## Sinopse
 O jogo se passa na França entre 1789 e 1799, durante os anos
