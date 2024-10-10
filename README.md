@@ -23,12 +23,14 @@ indivíduos.
 * **Astúcia:** Inteligência, capacidade estratégica e de manipulação.
 * **Lealdade:** Mede a fidelidade do personagem a uma facção ou causa.
 
-Exemplo   | Valor do exemplo
+Atributo  | Definição
 --------- | ------
-Exemplo 1 | R$ 10
-Exemplo 2 | R$ 8
-Exemplo 3 | R$ 7
-Exemplo 4 | R$ 8
+**Influência** | Representa o poder político e social do personagem.
+**Combate** | Habilidade de lutar e defender-se em confrontos físicos.
+**Oratória** |Capacidade de inspirar e manipular multidões ou indivíduos.
+**Astúcia**  | Inteligência, capacidade estratégica e de manipulação.
+**Lealdade** |  Mede a fidelidade do personagem a uma facção ou causa.
+
 Esses atributos são atributos contínuos, ou seja, numéricos.
 
 ### Variáveis do Ambiente:
