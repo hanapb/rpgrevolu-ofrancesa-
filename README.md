@@ -16,12 +16,6 @@ A mecânica do jogo será baseada em decisões estratégicas que os jogadores de
 
 ### Atributos:
 Os atributos que são utilizados no RPG são:
-* **Influência:** Representa o poder político e social do personagem.
-* **Combate:** Habilidade de lutar e defender-se em confrontos físicos.
-* **Oratória:** Capacidade de inspirar e manipular multidões ou
-indivíduos.
-* **Astúcia:** Inteligência, capacidade estratégica e de manipulação.
-* **Lealdade:** Mede a fidelidade do personagem a uma facção ou causa.
 
 Atributo  | Definição
 --------- | ------
