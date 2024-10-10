@@ -51,6 +51,10 @@ A Declaração Universal dos Direitos Humanos é um documento fundamental na his
 Essa declaração surgiu, em grande parte, em resposta à tragédia humanitária causada pela Segunda Guerra Mundial (1939-1945). Este período marcante da história expôs ao mundo situações de genocídio que ocorreram além dos campos de batalha. Milhões de pessoas foram vítimas de um verdadeiro extermínio, simplesmente por existirem e por serem quem eram. Judeus, crianças, mulheres, negros, homossexuais, idosos e camponeses tiveram suas vidas interrompidas de forma brutal.
 
 * Reinado do Terror.
+
+O Reinado do Terror (1792-1794) é lembrado pelas perseguições religiosas e políticas, por conflitos civis e pelas execuções realizadas na guilhotina. Durante esse período, a França estava sob o comando dos jacobinos, que eram vistos como os mais extremistas entre os revolucionários, fazendo com que essa fase também fosse chamada de "Terror Jacobino". 
+Esse estado de coisas surgiu da urgência de proteção da Revolução, alimentada por uma paranoia que enxergava inimigos a cada esquina. O Terror deu início a sua atuação em 22 de julho de 1789, quando o temor de um plano da aristocracia para provocar uma fome generalizada levou a população de Paris a assassinar brutalmente o ministro real Joseph Foullon e seu enteado. Naquele mesmo verão, ocorreu o conhecido Grande Medo, quando rumores sobre ações contrarrevolucionárias da aristocracia levaram agricultores aterrorizados a atacarem os castelos de seus senhores feudais.
+
 * Ascensão de Napoleão.
 
 
