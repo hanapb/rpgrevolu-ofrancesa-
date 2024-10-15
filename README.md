@@ -70,7 +70,7 @@ Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e
 
 ## Classes
 
-### Main
+### 1. Main
 
 A classe `Main` é a classe principal do projeto. Ela contém o método `main`, que é o ponto de entrada da aplicação.
 
@@ -125,7 +125,8 @@ public class NPC extends Pessoa {
 
 A classe `Personagem` representa um personagem jogável no sistema e estende a classe `Pessoa`.
 
-```java
+```
+java
 package com.mycompany.rpgrevfranc;
 
 public class Personagem extends Pessoa {
@@ -160,5 +161,71 @@ public class Personagem extends Pessoa {
         this.favorPopular = favorPopular;
     }
 }
+```
+
+### Pessoa
+
+A classe `Pessoa` é uma classe abstrata que representa uma pessoa no sistema. Ela contém atributos que definem características e habilidades das pessoas no jogo.
+
+```
+java
+package com.mycompany.rpgrevfranc;
+
+public abstract class Pessoa {
+    String nome;
+    private int astucia, influencia, combate, oratoria, lealdade;
+    
+    public static final String[] motivacoes = {"Revolucionário", "Moderado", "Monarquista", "Sobrevivente"};
+    public static final String[] aliancas = {"Jacobino", "Girondino", "Realista", "Povo"};
+
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAstucia() {
+        return astucia;
+    }
+
+    public void setAstucia(int astucia) {
+        this.astucia = astucia;
+    }
+
+    public int getInfluencia() {
+        return influencia;
+    }
+
+    public void setInfluencia(int influencia) {
+        this.influencia = influencia;
+    }
+
+    public int getCombate() {
+        return combate;
+    }
+
+    public void setCombate(int combate) {
+        this.combate = combate;
+    }
+
+    public int getOratoria() {
+        return oratoria;
+    }
+
+    public void setOratoria(int oratoria) {
+        this.oratoria = oratoria;
+    }
+
+    public int getLealdade() {
+        return lealdade;
+    }
+
+    public void setLealdade(int lealdade) {
+        this.lealdade = lealdade;
+    }
+}
+```
 
 
