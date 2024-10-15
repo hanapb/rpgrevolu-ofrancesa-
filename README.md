@@ -63,3 +63,24 @@ Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e
 
 
 
+
+
+
+# Documentação do Projeto
+
+## Classes
+
+### Main
+
+A classe `Main` é a classe principal do projeto. Ela contém o método `main`, que é o ponto de entrada da aplicação.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Pessoa pessoa = new NPC("casssaasndro");
+        System.out.println(pessoa.getNome());
+    }
+}
+
+
+
