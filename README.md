@@ -84,3 +84,77 @@ public class Main {
 
 
 
+### NPC
+
+A classe `NPC` representa um personagem não jogável no sistema e estende a classe `Pessoa`.
+
+```java
+package com.mycompany.rpgrevfranc;
+
+public class NPC extends Pessoa {
+    private String papel;
+    private String alianca;
+
+    public String getPapel() {
+        return papel;
+    }
+
+    public void setPapel(String papel) {
+        this.papel = papel;
+    }
+
+    public String getAlianca() {
+        return alianca;
+    }
+
+    public void setAlianca(String alianca) {
+        this.alianca = alianca;
+    }
+
+    public NPC(String nome) {
+        super(nome);
+    }
+}
+
+
+### Personagem
+
+A classe `Personagem` representa um personagem jogável no sistema e estende a classe `Pessoa`.
+
+```java
+package com.mycompany.rpgrevfranc;
+
+public class Personagem extends Pessoa {
+    private String motivacao, alianca;
+    private int favorPopular;
+
+    public Personagem(String nome) {
+        super(nome);
+    }
+
+    public String getMotivacao() {
+        return motivacao;
+    }
+
+    public void setMotivacao(String motivacao) {
+        this.motivacao = motivacao;
+    }
+
+    public String getAlianca() {
+        return alianca;
+    }
+
+    public void setAlianca(String alianca) {
+        this.alianca = alianca;
+    }
+
+    public int getFavorPopular() {
+        return favorPopular;
+    }
+
+    public void setFavorPopular(int favorPopular) {
+        this.favorPopular = favorPopular;
+    }
+}
+
+
