@@ -74,13 +74,15 @@ Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e
 
 A classe `Main` é a classe principal do projeto. Ela contém o método `main`, que é o ponto de entrada da aplicação.
 
-```java
+```
+java
 public class Main {
     public static void main(String[] args) {
         Pessoa pessoa = new NPC("casssaasndro");
         System.out.println(pessoa.getNome());
     }
-}```
+}
+```
 
 
 
@@ -88,7 +90,8 @@ public class Main {
 
 A classe `NPC` representa um personagem não jogável no sistema e estende a classe `Pessoa`.
 
-```java
+```
+java
 package com.mycompany.rpgrevfranc;
 
 public class NPC extends Pessoa {
@@ -114,7 +117,8 @@ public class NPC extends Pessoa {
     public NPC(String nome) {
         super(nome);
     }
-}```
+}
+```
 
 
 ### Personagem
