@@ -228,6 +228,8 @@ public abstract class Pessoa {
 
 ### Projeto JSON
 
+O projeto `JSON`, nesse caso, é uma estrutura de dados que define cenas e ações de um jogo interativo, com níveis, opções, e consequências baseadas em sucesso ou falha.
+
 ```
 {
   "id": "Id da Cena",
