@@ -1,0 +1,127 @@
+{
+    "id": "DeclaracaoDireitos",
+    "title": "Declaração dos Direitos do Homem e do Cidadão",
+    "description": "Os jogadores podem influenciar ou participar das discussões sobre a declaração, impactando a política do jogo.",
+    "levels": [
+        {
+            "level": 1,
+            "context": "A Assembleia está fervendo com discussões sobre a Declaração dos Direitos do Homem e do Cidadão. Este é um momento histórico, e suas ações aqui definirão o futuro da liberdade e da igualdade na França. Como você influenciará esse debate? Criação da assembleia, intrigas entre as classes sociais.",
+            "options": [
+                {
+                    "id": "1.1",
+                    "action": "Discursar",
+                    "successContext": "Maior popularidade de seus iguais e convencimento das pessoas de centro.",
+                    "atr_success": {
+                        "astucia": "+1",
+                        "oratoria": "+2",
+                        "influencia": "+2"
+                    },
+                    "failureContext": "Você foi humilhado, mas seu grupo percebe suas intenções, aumentando sua lealdade.",
+                    "atr_failure": {
+                        "lealdade": "+1"
+                    },
+                    "next": "level_2"
+                },
+                {
+                    "id": "1.2",
+                    "action": "Observar",
+                    "successContext": "Maior astúcia observando a situação.",
+                    "atr_success": {
+                        "astucia": "+1"
+                    },
+                    "failureContext": "Perda da confiança de ambos os lados.",
+                    "atr_failure": {
+                        "influencia": "-1",
+                        "lealdade": "-1"
+                    },
+                    "next": "level_2"
+                },
+                {
+                    "id": "1.3",
+                    "action": "Desafiar",
+                    "successContext": "Você conquistou maior desprezo dos oponentes e maior apoio dos aliados.",
+                    "atr_success": {
+                        "astucia": "+1",
+                        "oratoria": "+2",
+                        "influencia": "-2",
+                        "lealdade": "+1"
+                    },
+                    "failureContext": "Foi derrotado, mas conquistou a confiança de seus iguais.",
+                    "atr_failure": {
+                        "lealdade": "+1"
+                    },
+                    "next": "level_2"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "id": "level_2",
+            "context": "A Assembleia está fervendo com discussões sobre a Declaração dos Direitos do Homem e do Cidadão. Este é um momento histórico, e suas ações aqui definirão o futuro da liberdade e da igualdade na França. Como você influenciará esse debate? Junção da classe social e definição dos direitos.",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Discursar",
+                    "successContext": "Você influenciou com sucesso na criação da declaração.",
+                    "atr_success": {
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "Sua influência foi limitada e você perdeu relevância.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "level_3"
+                },
+                {
+                    "id": "2.2",
+                    "action": "Observar",
+                    "successContext": "Você manteve sua astúcia observando a discussão.",
+                    "atr_success": {
+                        "astucia": "+1"
+                    },
+                    "failureContext": "Você perdeu relevância e influência nas discussões.",
+                    "atr_failure": {
+                        "astucia": "-1",
+                        "influencia": "-1",
+                        "lealdade": "-1"
+                    },
+                    "next": "level_3"
+                },
+                {
+                    "id": "2.3",
+                    "action": "Combater",
+                    "successContext": "Você descredibilizou a oposição e reforçou sua posição.",
+                    "atr_success": {
+                        "combate": "+2"
+                    },
+                    "failureContext": "Você foi derrotado e perdeu força.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "level_3"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "id": "level_3",
+            "context": "A Assembleia está fervendo com discussões sobre a Declaração dos Direitos do Homem e do Cidadão. Este é um momento histórico, e suas ações aqui definirão o futuro da liberdade e da igualdade na França. Como você influenciará esse debate? Consequências finais baseadas nas opções intermediárias (alianças, combates, traições).",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Concluir com sucesso",
+                    "successContext": "A criação da Declaração foi um sucesso! Você se tornou um ícone revolucionário.",
+                    "failureContext": "Sua participação foi mínima, mas a Declaração foi aprovada.",
+                    "next": "fim"
+                },
+                {
+                    "id": "3.2",
+                    "action": "Fracasso total",
+                    "successContext": "Você foi expulso da Assembleia e perdeu todo o seu poder.",
+                    "failureContext": "Sua influência foi completamente perdida e você foi ignorado.",
+                    "next": "fim"
+                }
+            ]
+        }
+    ]
+}

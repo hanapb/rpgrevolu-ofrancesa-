@@ -1,0 +1,142 @@
+{
+    "id": "ReinadoTerror1",
+    "title": "Reinado do Terror",
+    "description": "Os jogadores participam das tensões e conflitos durante o período do Reinado do Terror, defendendo ideais e enfrentando a guilhotina.",
+    "levels": [
+        {
+            "level": 1,
+            "context": "Os Jacobinos controlam a Comissão de Segurança Pública, mas a ordem nas ruas está longe de ser garantida. A revolta popular cresce, e os comitês estão pressionando por medidas mais duras. Você se encontra em uma sala escura, onde os líderes discutem o futuro da revolução. A tensão é palpável. O que você faz? Discurso Revolucionário na Praça pelos Jacobinos",
+            "options": [
+                {
+                    "id": "1.1",
+                    "action": "Fazer um discurso inflamado",
+                    "successContext": "O discurso incitou fervor revolucionário, aumentando sua Oratória em +2.",
+                    "atr_success": {
+                        "oratoria": "+2"
+                    },
+                    "failureContext": "O discurso foi vaiado, resultando em perda de Oratória (-2).",
+                    "atr_failure": {
+                        "oratoria": "-2"
+                    },
+                    "next": "level_2_jacobinos"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "id": "level_2_jacobinos",
+            "context": "Os Jacobinos controlam a Comissão de Segurança Pública, mas a ordem nas ruas está longe de ser garantida. A revolta popular cresce, e os comitês estão pressionando por medidas mais duras. Você se encontra em uma sala escura, onde os líderes discutem o futuro da revolução. A tensão é palpável. O que você faz? Debate Interno no Comitê de Salvação Pública pelos Jacobinos",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Defender uma estratégia radical",
+                    "successContext": "Você convenceu o comitê, ganhando Oratória em +1.",
+                    "atr_success": {
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "Sua defesa foi mal-sucedida, perdendo Oratória (-1).",
+                    "atr_failure": {
+                        "oratoria": "-1"
+                    },
+                    "next": "level_3_acusacao"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "id": "level_3_acusacao",
+            "context": "Acusação de Excesso e Brutalidade pelos Jacobinos",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Tentar justificar suas ações",
+                    "successContext": "Você convenceu o tribunal e evitou a guilhotina.",
+                    "atr_success": {},
+                    "failureContext": "Sua defesa falhou e você foi condenado à guilhotina.",
+                    "atr_failure": {
+                        "oratoria": "-2"
+                    },
+                    "next": "fim"
+                }
+            ]
+        },
+        {
+            "level": 1,
+            "context": "Proposta de Reforma no Parlamento pelos Girondinos",
+            "options": [
+                {
+                    "id": "1.2",
+                    "action": "Fazer um discurso no Parlamento",
+                    "successContext": "O discurso foi bem recebido e a proposta aprovada, aumentando Oratória em +2.",
+                    "atr_success": {
+                        "oratoria": "+2"
+                    },
+                    "failureContext": "O discurso foi mal recebido, resultando em perda de Oratória (-2).",
+                    "atr_failure": {
+                        "oratoria": "-2"
+                    },
+                    "next": "level_2_girondinos"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "id": "level_2_girondinos",
+            "context": "Negociação com os Jacobinos pelos Girondinos",
+            "options": [
+                {
+                    "id": "2.2",
+                    "action": "Tentar negociar uma trégua",
+                    "successContext": "A negociação foi bem-sucedida, ganhando Oratória em +1.",
+                    "atr_success": {
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "A negociação falhou e intensificou as hostilidades, resultando em perda de Oratória (-1).",
+                    "atr_failure": {
+                        "oratoria": "-1"
+                    },
+                    "next": "level_3_acusacao"
+                }
+            ]
+        },
+        {
+            "level": 1,
+            "context": "Discurso à Nobreza pelos Realistas",
+            "options": [
+                {
+                    "id": "1.3",
+                    "action": "Fazer um discurso à nobreza",
+                    "successContext": "Você arrecadou fundos e apoio, aumentando Oratória em +2.",
+                    "atr_success": {
+                        "oratoria": "+2"
+                    },
+                    "failureContext": "O discurso falhou em convencer a nobreza, resultando em perda de Oratória (-2).",
+                    "atr_failure": {
+                        "oratoria": "-2"
+                    },
+                    "next": "level_2_realistas"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "id": "level_2_realistas",
+            "context": "Defesa em Tribunal pelos Realistas",
+            "options": [
+                {
+                    "id": "2.3",
+                    "action": "Apelar por clemência",
+                    "successContext": "Sua defesa foi convincente e você foi liberto.",
+                    "atr_success": {
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "A defesa falhou e você foi condenado à guilhotina.",
+                    "atr_failure": {
+                        "oratoria": "-1"
+                    },
+                    "next": "fim"
+                }
+            ]
+        }
+    ]
+}

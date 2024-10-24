@@ -1,0 +1,189 @@
+{
+    "id": "ReinadoTerror2",
+    "title": "Reinado do Terror (Guris)",
+    "description": "Os jogadores navegam em situações tensas durante o Reinado do Terror, onde cada escolha pode impactar a revolução ou resultar em sua queda.",
+    "levels": [
+        {
+            "level": 1,
+            "context": "Você está no meio de uma reunião tensa com os líderes radicais. A discussão gira em torno das táticas de repressão e da traição de moderados. O que você fará a seguir poderá determinar o futuro da Revolução. O Banquete dos Radicais",
+            "options": [
+                {
+                    "id": "1.1",
+                    "action": "Espionar a conversa de dois líderes",
+                    "successContext": "Você descobriu planos de um ataque a moderados. Ganhou informações importantes.",
+                    "atr_success": {
+                        "astucia": "+1"
+                    },
+                    "failureContext": "Você foi notado e descreditado, perdendo Favor Popular.",
+                    "atr_failure": {
+                        "favorPopular": "-1"
+                    },
+                    "next": "level_2"
+                },
+                {
+                    "id": "1.2",
+                    "action": "Propor um brinde à Revolução",
+                    "successContext": "Seu discurso inspirou os presentes, aumentando sua Influência.",
+                    "atr_success": {
+                        "oratoria": "+2"
+                    },
+                    "failureContext": "O discurso foi mal recebido, e você foi vaiado.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "level_2"
+                },
+                {
+                    "id": "1.3",
+                    "action": "Confrontar um radical sobre suas táticas violentas",
+                    "successContext": "Você venceu o duelo e ganhou respeito.",
+                    "atr_success": {
+                        "combate": "+1"
+                    },
+                    "failureContext": "Você foi derrotado e se tornou alvo de hostilidade.",
+                    "atr_failure": {
+                        "combate": "-1"
+                    },
+                    "next": "level_2"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "context": "Você está no meio de uma reunião tensa com os líderes radicais. A discussão gira em torno das táticas de repressão e da traição de moderados. O Julgamento na Praça",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Defender o moderado",
+                    "successContext": "Você convenceu a multidão, aumentando sua Influência e ganhando aliados.",
+                    "atr_success": {
+                        "oratoria": "+2",
+                        "influencia": "+1"
+                    },
+                    "failureContext": "A multidão se voltou contra você, e sua Lealdade foi questionada.",
+                    "atr_failure": {
+                        "lealdade": "-1"
+                    },
+                    "next": "level_3"
+                },
+                {
+                    "id": "2.2",
+                    "action": "Delatar o moderado",
+                    "successContext": "Você ganhou favor com os Jacobinos, mas gerou inimizades.",
+                    "atr_success": {
+                        "astucia": "+2"
+                    },
+                    "failureContext": "Outros perceberam sua traição e podem retaliar.",
+                    "atr_failure": {
+                        "astucia": "-1"
+                    },
+                    "next": "level_3"
+                },
+                {
+                    "id": "2.3",
+                    "action": "Lançar uma pedra na corte",
+                    "successContext": "Você criou um tumulto, permitindo que o moderado escapasse.",
+                    "atr_success": {
+                        "combate": "+1"
+                    },
+                    "failureContext": "Você foi preso e levado a julgamento.",
+                    "atr_failure": {
+                        "lealdade": "-1"
+                    },
+                    "next": "level_3"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "context": "Você está no meio de uma reunião tensa com os líderes radicais. O Conflito no Mercado",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Subir em uma caixa e discursar para a multidão",
+                    "successContext": "Você galvanizou o povo, aumentando seu Favor Popular.",
+                    "atr_success": {
+                        "oratoria": "+2"
+                    },
+                    "failureContext": "A multidão se voltou contra você, comprometendo sua segurança.",
+                    "atr_failure": {
+                        "favorPopular": "-2"
+                    },
+                    "next": "level_4"
+                },
+                {
+                    "id": "3.2",
+                    "action": "Recrutar um grupo de cidadãos para proteger os moderados",
+                    "successContext": "Os cidadãos se uniram a você, aumentando sua Lealdade.",
+                    "atr_success": {
+                        "lealdade": "+2",
+                        "influencia": "+1"
+                    },
+                    "failureContext": "O grupo se dispersou, e você foi isolado.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "level_4"
+                },
+                {
+                    "id": "3.3",
+                    "action": "Atacar um líder radical que incita a violência",
+                    "successContext": "Você derrotou o líder e ganhou respeito entre os cidadãos.",
+                    "atr_success": {
+                        "combate": "+2"
+                    },
+                    "failureContext": "Você foi ferido, resultando em uma desvantagem nas próximas interações.",
+                    "atr_failure": {
+                        "lealdade": "-1"
+                    },
+                    "next": "level_4"
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "context": "A Escolha da Traição",
+            "options": [
+                {
+                    "id": "4.1",
+                    "action": "Aceitar a proposta do moderado",
+                    "successContext": "Você ganhou informações valiosas que podem mudar o rumo da revolução.",
+                    "atr_success": {
+                        "lealdade": "+2"
+                    },
+                    "failureContext": "Você foi visto como um traidor pelos radicais.",
+                    "atr_failure": {
+                        "lealdade": "-1"
+                    },
+                    "next": "fim"
+                },
+                {
+                    "id": "4.2",
+                    "action": "Trair o moderado para ganhar favor com os jacobinos",
+                    "successContext": "Você foi recompensado, mas gerou uma série de inimizades.",
+                    "atr_success": {
+                        "astucia": "+2"
+                    },
+                    "failureContext": "Os jacobinos não confiaram em você, e sua Lealdade foi questionada.",
+                    "atr_failure": {
+                        "lealdade": "-1"
+                    },
+                    "next": "fim"
+                },
+                {
+                    "id": "4.3",
+                    "action": "Alertar os moderados sobre a possível traição",
+                    "successContext": "Os moderados se organizaram e contra-atacaram, aumentando sua influência.",
+                    "atr_success": {
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "Você foi descredibilizado, perdendo apoio.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "fim"
+                }
+            ]
+        }
+    ]
+}

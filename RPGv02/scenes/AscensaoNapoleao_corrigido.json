@@ -1,0 +1,135 @@
+{
+    "id": "AscensaoNapoleao",
+    "title": "Ascensão de Napoleão",
+    "description": "Os personagens podem decidir apoiar ou resistir à ascensão de Napoleão Bonaparte, que promete ordem após o caos, mas também centraliza o poder em suas mãos.",
+    "levels": [
+        {
+            "level": 1,
+            "context": "Napoleão Bonaparte se tornou uma figura central na política francesa, e agora o futuro da Revolução repousa em suas mãos. As decisões que você tomar moldarão seu destino e o da França. Como você se posiciona diante deste momento decisivo? O personagem reflete sobre suas escolhas enquanto observa o avanço de Napoleão.",
+            "options": [
+                {
+                    "id": "1.1",
+                    "action": "Apoiar Napoleão",
+                    "successContext": "Você foi bem-sucedido em apoiar Napoleão e aumenta sua influência.",
+                    "atr_success": {
+                        "lealdade": "+2",
+                        "influencia": "+1"
+                    },
+                    "failureContext": "Sua lealdade foi questionada e sua influência foi reduzida.",
+                    "atr_failure": {
+                        "lealdade": "-2",
+                        "influencia": "-1"
+                    },
+                    "next": "level_2_allied"
+                },
+                {
+                    "id": "1.2",
+                    "action": "Resistir a Napoleão",
+                    "successContext": "Você conseguiu resistir e recrutou aliados para a causa.",
+                    "atr_success": {
+                        "influencia": "+2",
+                        "forca": "+2"
+                    },
+                    "failureContext": "Você falhou em resistir e perdeu influência entre os revolucionários.",
+                    "atr_failure": {
+                        "influencia": "-1",
+                        "forca": "-1"
+                    },
+                    "next": "level_2_resist"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "id": "level_2_allied",
+            "context": "Você se junta a uma reunião secreta de aliados de Napoleão.",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Recrutar revolucionários",
+                    "successContext": "Você recrutou com sucesso novos aliados para Napoleão.",
+                    "atr_success": {
+                        "influencia": "+3"
+                    },
+                    "failureContext": "Seus esforços para recrutar falharam.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "level_3_battle"
+                },
+                {
+                    "id": "2.2",
+                    "action": "Tomar pontos estratégicos de Paris",
+                    "successContext": "Você ajudou Napoleão a tomar Paris e consolidou seu poder.",
+                    "atr_success": {
+                        "lealdade": "+2",
+                        "influencia": "+1"
+                    },
+                    "failureContext": "Sua tentativa de capturar pontos estratégicos falhou.",
+                    "atr_failure": {
+                        "lealdade": "-1",
+                        "influencia": "-1"
+                    },
+                    "next": "level_3_failure"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "id": "level_3_battle",
+            "context": "Você se encontra no campo de batalha, lutando ao lado de Napoleão.",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Lutar bravamente",
+                    "successContext": "Você foi vitorioso na batalha e Napoleão agora confia plenamente em você.",
+                    "atr_success": {
+                        "forca": "+3",
+                        "influencia": "+2"
+                    },
+                    "failureContext": "Você falhou e foi gravemente ferido na batalha.",
+                    "atr_failure": {
+                        "forca": "-2",
+                        "influencia": "-1"
+                    },
+                    "next": "level_4_victory"
+                },
+                {
+                    "id": "3.2",
+                    "action": "Trair Napoleão",
+                    "successContext": "Sua traição foi bem-sucedida e Napoleão foi deposto.",
+                    "atr_success": {
+                        "lealdade": "-5"
+                    },
+                    "failureContext": "Sua traição foi descoberta e você foi executado.",
+                    "atr_failure": {
+                        "lealdade": "-5"
+                    },
+                    "next": "level_4_failure"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "id": "level_3_failure",
+            "context": "Você falhou em sua missão e se encontra preso pelos aliados de Napoleão.",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Tentar escapar",
+                    "successContext": "Você conseguiu escapar e retorna para liderar uma nova revolta.",
+                    "atr_success": {
+                        "forca": "+1",
+                        "influencia": "+2"
+                    },
+                    "failureContext": "Sua tentativa de fuga falhou.",
+                    "atr_failure": {
+                        "forca": "-2",
+                        "influencia": "-1"
+                    },
+                    "next": "level_4_escape"
+                }
+            ]
+        }
+    ]
+}

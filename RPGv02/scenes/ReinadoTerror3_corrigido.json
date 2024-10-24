@@ -1,0 +1,89 @@
+{
+    "id": "ReinadoTerror3",
+    "title": "Reinado do Terror",
+    "description": "Um período sombrio onde os jogadores navegam pelas acusações de traição, caçando ou sendo caçados pelos Comitês Revolucionários.",
+    "levels": [
+        {
+            "level": 1,
+            "context": "As ruas estão cheias de rumores. O Comitê de Segurança Pública está dividido, e os revolucionários estão tomando medidas extremas. Você se encontra em uma situação onde cada movimento será cuidadosamente observado. Decisões dos Jacobinos para apoiar a Comissão de Segurança Pública",
+            "options": [
+                {
+                    "id": "1.1",
+                    "action": "Apoiar a Comissão",
+                    "successContext": "A repressão aumentou e a ordem foi mantida, mas o ressentimento popular cresce.",
+                    "atr_success": {
+                        "influencia": "+2",
+                        "revoltaPopular": "+1"
+                    },
+                    "failureContext": "A repressão falhou, e a cidade mergulhou no caos.",
+                    "atr_failure": {
+                        "influencia": "-1",
+                        "revoltaPopular": "+2"
+                    },
+                    "next": "level_2"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "context": "Decisões dos Girondinos para organizar uma manifestação popular",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Organizar a manifestação",
+                    "successContext": "A manifestação foi um sucesso, enfraquecendo temporariamente o poder dos jacobinos.",
+                    "atr_success": {
+                        "combate": "+2",
+                        "influencia": "+1"
+                    },
+                    "failureContext": "A manifestação foi mal organizada, resultando em uma violenta repressão.",
+                    "atr_failure": {
+                        "influencia": "-1"
+                    },
+                    "next": "level_3"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "context": "Decisões dos Realistas para sabotar os esforços dos Jacobinos",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Sabotar os Jacobinos",
+                    "successContext": "A sabotagem foi bem-sucedida, criando instabilidade no governo jacobino.",
+                    "atr_success": {
+                        "astucia": "+2",
+                        "influencia": "-1"
+                    },
+                    "failureContext": "A sabotagem falhou, aumentando a vigilância e a repressão.",
+                    "atr_failure": {
+                        "astucia": "-1",
+                        "influencia": "-2"
+                    },
+                    "next": "level_4"
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "context": "Decisões do Povo para negociar uma trégua",
+            "options": [
+                {
+                    "id": "4.1",
+                    "action": "Negociar uma trégua",
+                    "successContext": "A negociação foi bem-sucedida, trazendo uma breve pausa na violência.",
+                    "atr_success": {
+                        "oratoria": "+2",
+                        "lealdade": "+1"
+                    },
+                    "failureContext": "A negociação falhou, resultando em mais repressão ao povo.",
+                    "atr_failure": {
+                        "lealdade": "-1"
+                    },
+                    "next": "fim"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+{
+    "id": "QuedaBastilha",
+    "title": "Queda da Bastilha",
+    "description": "Os jogadores participam dos eventos que levaram à Queda da Bastilha, um marco da Revolução Francesa.",
+    "levels": [
+        {
+            "level": 1,
+            "context": "As tensões nas ruas de Paris chegaram ao ponto de ebulição. A multidão clama pela queda da Bastilha, símbolo do poder despótico. A revolução está em curso, e suas decisões determinarão o rumo dos eventos. O que você fará neste momento crucial? O personagem avista um protesto em Paris pela queda da Bastilha.",
+            "options": [
+                {
+                    "id": "1.1",
+                    "action": "Se juntar ao protesto",
+                    "successContext": "Você se junta ao protesto com sucesso e ganha popularidade.",
+                    "atr_success": {
+                        "astucia": "+1"
+                    },
+                    "failureContext": "Sua presença no protesto foi ignorada e sua popularidade não aumentou.",
+                    "atr_failure": {
+                        "popularidade": "0"
+                    },
+                    "next": "level_2_protesto"
+                },
+                {
+                    "id": "1.2",
+                    "action": "Denunciar às autoridades",
+                    "successContext": "Você denunciou o protesto com sucesso e ganhou confiança das autoridades.",
+                    "atr_success": {
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "As autoridades ignoraram sua denúncia e você perdeu credibilidade.",
+                    "atr_failure": {
+                        "credibilidade": "-1"
+                    },
+                    "next": "level_2_protesto"
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "id": "level_2_protesto",
+            "context": "Você conhece revolucionários que planejam derrubar a Bastilha.",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Participar da parte estratégica",
+                    "successContext": "Sua estratégia foi bem-sucedida e você ganhou popularidade.",
+                    "atr_success": {
+                        "astucia": "+2"
+                    },
+                    "failureContext": "Sua estratégia falhou, e você perdeu popularidade.",
+                    "atr_failure": {
+                        "popularidade": "-1"
+                    },
+                    "next": "level_3_batalha"
+                },
+                {
+                    "id": "2.2",
+                    "action": "Participar da equipe de ataque",
+                    "successContext": "Você se juntou ao ataque e foi bem-sucedido, ganhando popularidade.",
+                    "atr_success": {
+                        "combate": "+2"
+                    },
+                    "failureContext": "Você foi ferido no ataque e perdeu força.",
+                    "atr_failure": {
+                        "forca": "-2"
+                    },
+                    "next": "level_3_batalha"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "id": "level_3_batalha",
+            "context": "Você está no campo de batalha, lutando pela queda da Bastilha.",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Atacar diretamente a porta principal",
+                    "successContext": "Você liderou o ataque frontal com sucesso e tomou a Bastilha.",
+                    "atr_success": {
+                        "combate": "+3"
+                    },
+                    "failureContext": "Você falhou no ataque frontal e foi gravemente ferido.",
+                    "atr_failure": {
+                        "forca": "-3"
+                    },
+                    "next": "fim"
+                },
+                {
+                    "id": "3.2",
+                    "action": "Buscar uma entrada lateral",
+                    "successContext": "Você encontrou uma entrada lateral e conseguiu entrar com sucesso.",
+                    "atr_success": {
+                        "astucia": "+2"
+                    },
+                    "failureContext": "Você foi pego tentando entrar pela lateral e ferido.",
+                    "atr_failure": {
+                        "forca": "-2"
+                    },
+                    "next": "fim"
+                }
+            ]
+        }
+    ]
+}
