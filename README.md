@@ -226,4 +226,72 @@ public abstract class Pessoa {
 }
 ```
 
+### Projeto JSON
 
+'''
+{
+  "id": "Id da Cena",
+  "title": "Título da Cena",
+  "description": "Descreve o ambiente e o momento da cena",
+  "levels": [
+    {
+      "level": 1,
+      "context": "Contexto do que está acontecendo no momento, logo antes das opções de ações, descreve o ambiente atual, fornecendo um melhor entendimento para o jogador",
+      "options": [
+        {
+          "id": "1.1",
+          "action": "Nome da Ação",
+          "successContext": "Contexto em caso de sucesso",
+          "atr_success": {
+            "lealdade": "+2",
+            "influencia": "+1"
+          },
+          "failureContext": "Contexto em caso de falha",
+          "atr_failure": {
+            "lealdade": "-1",
+            "influencia": "-2"
+          },
+          "next": "Id do level seguinte"
+        },
+        {
+          "id": "1.2",
+          "action": "Nome da próxima Ação",
+          "successContext": "Contexto em caso de sucesso.",
+          "atr_success": {
+            "força": "+1",
+            "influencia": "+2"
+          },
+          "failureContext": "Contexto em caso de falha",
+          "atr_failure": {
+            "força": "-2",
+            "influencia": "-1"
+          },
+          "next": "Id do level seguinte"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "context": "Contexto do que está acontecendo no momento, logo antes das opções de ações, descreve o ambiente atual, fornecendo um melhor entendimento para o jogador",
+      "options": [
+        {
+          "id": "2.1",
+          "action": "Nome da Ação",
+          "successContext": "Contexto em caso de sucesso",
+          "atr_success": {
+            "lealdade": "+2",
+            "influencia": "+1"
+          },
+          "failureContext": "Contexto em caso de falha",
+          "atr_failure": {
+            "força": "-2",
+            "influencia": "-1"
+          },
+          "next": "Id do level seguinte"
+        }
+      ]
+    }
+  ]
+}
+ '''
+ 
