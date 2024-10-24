@@ -68,7 +68,7 @@ Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e
 
 ## Classes
 
-### 1. Main
+### Main
 
 A classe `Main` é a classe principal do projeto. Ela contém o método `main`, que é o ponto de entrada da aplicação.
 
