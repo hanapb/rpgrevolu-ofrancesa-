@@ -104,7 +104,7 @@ public class GameMaster {
     }
 
     // Método para buscar um nível pelo ID ou número
-    private Evento.Nivel buscarNivelPorId(String nivelId, Evento evento) {
+    public static Evento.Nivel buscarNivelPorId(String nivelId, Evento evento) {
         for (Evento.Nivel nivel : evento.getLevels()) {
             if (String.valueOf(nivel.getLevel()).equals(nivelId)) {
                 return nivel;

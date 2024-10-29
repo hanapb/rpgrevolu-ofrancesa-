@@ -6,19 +6,15 @@ package br.edu.ifrs.veranopolis.rpgrf.gui;
 
 import br.edu.ifrs.veranopolis.rpgrf.GameMaster;
 import br.edu.ifrs.veranopolis.rpgrf.dados.Evento;
-import javax.swing.*;
-import java.awt.*;
-import java.util.List;
+import br.edu.ifrs.veranopolis.rpgrf.dados.Evento.Nivel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
 
-public class OptionsFrame extends FundoFrame {
+public class OutcomeFrame extends FundoFrame {
 
     private Evento evento;
 
-    public OptionsFrame(Evento evento) {
-        this(evento, evento.getLevels().get(0));
-    }
-
-    public OptionsFrame(Evento evento, Evento.Nivel nivel) {
+    public OutcomeFrame(Evento evento, Evento.Opcao opcao, boolean sucesso) {
         super("fundo.png");
         this.evento = evento;
 
@@ -26,23 +22,21 @@ public class OptionsFrame extends FundoFrame {
         titleLabel.setText(evento.getTitle());
 
         // Exibe o contexto do evento em TextPanel
-        textPanel.setText(nivel.getContext());
+        textPanel.setText(sucesso ? opcao.getSuccessContext() : opcao.getFailureContext());
 
-        // Adiciona botões com base nas opções do evento
-        for (Evento.Opcao opcao : nivel.getOptions()) {
-            JButton button = new JButton(opcao.getAction());
-            buttonPanel.add(button);
+        JButton proximo = new JButton("Entendido");
+        buttonPanel.add(proximo);
 
-            button.addActionListener(e -> {
-                // Ajustar conforme Personagem e atributos do evento
-                double d = Math.random();
-                System.out.println("Teste " + opcao.getId());
-                OutcomeFrame of = new OutcomeFrame(evento, opcao, d > 0.5);
-                dispose();
+        proximo.addActionListener(e -> {
+            Nivel nivel = GameMaster.buscarNivelPorId(opcao.getNext(), evento);
+            if(nivel == null) {
+                System.out.println("O nivel com id " + opcao.getNext() + " não foi encontrado!");
+            } else {
+                OptionsFrame of = new OptionsFrame(evento, nivel);
                 of.setVisible(true);
-            });
-        }
-
+            }
+        });
+        
         JButton sair = new JButton("Sair");
         buttonPanel.add(sair);
 
