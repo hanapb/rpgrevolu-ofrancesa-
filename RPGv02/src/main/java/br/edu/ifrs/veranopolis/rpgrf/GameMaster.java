@@ -5,6 +5,7 @@
 package br.edu.ifrs.veranopolis.rpgrf;
 
 import br.edu.ifrs.veranopolis.rpgrf.dados.Evento;
+import br.edu.ifrs.veranopolis.rpgrf.gui.OptionsFrame;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
@@ -12,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-
 
 public class GameMaster {
 
@@ -55,7 +55,9 @@ public class GameMaster {
             System.out.println((i + 1) + ". " + eventos.get(i).getTitle());
         }
         int escolha = scanner.nextInt();
-        executarEvento(eventos.get(escolha - 1));
+        //executarEvento(eventos.get(escolha - 1));
+        OptionsFrame of = new OptionsFrame(eventos.get(escolha - 1));
+        of.setVisible(true);
     }
 
     // Método para executar o evento escolhido

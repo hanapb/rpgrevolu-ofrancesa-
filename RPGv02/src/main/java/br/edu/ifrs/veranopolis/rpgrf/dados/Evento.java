@@ -3,6 +3,10 @@ package br.edu.ifrs.veranopolis.rpgrf.dados;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.util.List;
+import java.util.Map;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Evento {
 
@@ -44,19 +48,20 @@ public class Evento {
     public void setLevels(List<Nivel> levels) {
         this.levels = levels;
     }
-    
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Nivel {
-        private String id;
+        private String id; // Id opcional, como no JSON, alguns níveis possuem 'id'
         private int level;
         private String context;
         private List<Opcao> options;
+
+        // Getters e Setters
 
         public String getId() {
             return id;
         }
 
-        // Getters e Setters
         public void setId(String id) {
             this.id = id;
         }
@@ -84,7 +89,6 @@ public class Evento {
         public void setOptions(List<Opcao> options) {
             this.options = options;
         }
-        
     }
 
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -93,8 +97,10 @@ public class Evento {
         private String action;
         private String next;
         private String successContext;
+        private Map<String, String> atr_success; // Mapa para atributos de sucesso
         private String failureContext;
-        private String outcome;  // Adicionando o campo "outcome" para desfecho
+        private Map<String, String> atr_failure; // Mapa para atributos de falha
+        private String outcome;
 
         // Getters e Setters
 
@@ -130,12 +136,28 @@ public class Evento {
             this.successContext = successContext;
         }
 
+        public Map<String, String> getAtr_success() {
+            return atr_success;
+        }
+
+        public void setAtr_success(Map<String, String> atr_success) {
+            this.atr_success = atr_success;
+        }
+
         public String getFailureContext() {
             return failureContext;
         }
 
         public void setFailureContext(String failureContext) {
             this.failureContext = failureContext;
+        }
+
+        public Map<String, String> getAtr_failure() {
+            return atr_failure;
+        }
+
+        public void setAtr_failure(Map<String, String> atr_failure) {
+            this.atr_failure = atr_failure;
         }
 
         public String getOutcome() {
@@ -145,6 +167,5 @@ public class Evento {
         public void setOutcome(String outcome) {
             this.outcome = outcome;
         }
-        
     }
 }
