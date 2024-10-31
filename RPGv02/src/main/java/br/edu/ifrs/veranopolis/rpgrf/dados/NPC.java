@@ -7,6 +7,7 @@ package br.edu.ifrs.veranopolis.rpgrf.dados;
 public class NPC extends Pessoa{
     private String papel;
     private String alianca;
+    private String imagem;
 
     public String getPapel() {
         return papel;
@@ -22,6 +23,14 @@ public class NPC extends Pessoa{
 
     public void setAlianca(String alianca) {
         this.alianca = alianca;
+    }
+
+    public String getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
     
     public NPC(String nome){
