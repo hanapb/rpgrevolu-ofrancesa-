@@ -77,7 +77,7 @@ public class FundoFrame extends JFrame {
         backgroundPanel.add(titleLabel, BorderLayout.NORTH);
 
         textPanel = new TextPanel("Teste");
-        textPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
+        textPanel.setBorder(new EmptyBorder(50, 50, 50, 50));
         backgroundPanel.add(textPanel, BorderLayout.CENTER);
 
         // Painel para os botões de opções

@@ -28,21 +28,26 @@ public class OutcomeFrame extends FundoFrame {
         buttonPanel.add(proximo);
 
         proximo.addActionListener(e -> {
-            Nivel nivel = GameMaster.buscarNivelPorId(opcao.getNext(), evento);
-            if(nivel == null) {
-                System.out.println("O nivel com id " + opcao.getNext() + " não foi encontrado!");
+            if(opcao.getNext().equals("fim")) {
+                dispose();
             } else {
-                OptionsFrame of = new OptionsFrame(evento, nivel);
-                of.setVisible(true);
+                Nivel nivel = GameMaster.buscarNivelPorId(opcao.getNext(), evento);
+                if(nivel == null) {
+                    System.out.println("O nivel com id " + opcao.getNext() + " não foi encontrado!");
+                } else {
+                    OptionsFrame of = new OptionsFrame(evento, nivel);
+                    of.setVisible(true);
+                    dispose();
+                }
             }
         });
         
-        JButton sair = new JButton("Sair");
+        /*JButton sair = new JButton("Sair");
         buttonPanel.add(sair);
 
         sair.addActionListener(e -> {
             dispose();
-        });
+        });*/
 
         add(buttonPanel, BorderLayout.SOUTH);
         setLocationRelativeTo(null);

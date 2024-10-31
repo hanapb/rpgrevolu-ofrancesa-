@@ -19,7 +19,7 @@ public class OptionsFrame extends FundoFrame {
     }
 
     public OptionsFrame(Evento evento, Evento.Nivel nivel) {
-        super("fundo.png");
+        super("fundo_maior.png");
         this.evento = evento;
 
         // Define o título do evento
