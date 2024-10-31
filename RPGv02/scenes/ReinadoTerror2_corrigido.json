@@ -50,6 +50,7 @@
         },
         {
             "level": 2,
+            "id":"level_2",
             "context": "Você está no meio de uma reunião tensa com os líderes radicais. A discussão gira em torno das táticas de repressão e da traição de moderados. O Julgamento na Praça",
             "options": [
                 {
@@ -96,6 +97,7 @@
         },
         {
             "level": 3,
+            "id":"level_3",
             "context": "Você está no meio de uma reunião tensa com os líderes radicais. O Conflito no Mercado",
             "options": [
                 {
@@ -142,6 +144,7 @@
         },
         {
             "level": 4,
+            "id":"level_4",
             "context": "A Escolha da Traição",
             "options": [
                 {

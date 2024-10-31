@@ -5,6 +5,7 @@
     "levels": [
         {
             "level": 1,
+            "id": "level_1",
             "context": "As ruas estão cheias de rumores. O Comitê de Segurança Pública está dividido, e os revolucionários estão tomando medidas extremas. Você se encontra em uma situação onde cada movimento será cuidadosamente observado. Decisões dos Jacobinos para apoiar a Comissão de Segurança Pública",
             "options": [
                 {
@@ -26,6 +27,7 @@
         },
         {
             "level": 2,
+            "id": "level_2",
             "context": "Decisões dos Girondinos para organizar uma manifestação popular",
             "options": [
                 {
@@ -46,6 +48,7 @@
         },
         {
             "level": 3,
+            "id": "level_3",
             "context": "Decisões dos Realistas para sabotar os esforços dos Jacobinos",
             "options": [
                 {
@@ -67,6 +70,7 @@
         },
         {
             "level": 4,
+            "id": "level_4",
             "context": "Decisões do Povo para negociar uma trégua",
             "options": [
                 {

@@ -75,6 +75,42 @@
             ]
         },
         {
+            "level": 2,
+            "id": "level_2_resist",
+            "context": "Você está reunido com outros revolucionários que também desejam resistir à crescente influência de Napoleão. As decisões tomadas aqui podem fortalecer sua posição contra ele.",
+            "options": [
+                {
+                    "id": "2.1",
+                    "action": "Formar uma aliança com outros líderes revolucionários",
+                    "successContext": "Você conseguiu formar uma aliança poderosa que fortalece a resistência.",
+                    "atr_success": {
+                        "influencia": "+3",
+                        "forca": "+2"
+                    },
+                    "failureContext": "Sua tentativa de aliança falhou e gerou divisões entre os revolucionários.",
+                    "atr_failure": {
+                        "influencia": "-1",
+                        "forca": "-1"
+                    },
+                    "next": "level_3_battle_resist"
+                },
+                {
+                    "id": "2.2",
+                    "action": "Conspirar para expor as ambições de Napoleão ao público",
+                    "successContext": "A conspiração deu certo e a população começou a questionar Napoleão.",
+                    "atr_success": {
+                        "influencia": "+3"
+                    },
+                    "failureContext": "A conspiração foi descoberta e você perdeu aliados.",
+                    "atr_failure": {
+                        "influencia": "-2",
+                        "forca": "-1"
+                    },
+                    "next": "level_3_failure"
+                }
+            ]
+        },
+        {
             "level": 3,
             "id": "level_3_battle",
             "context": "Você se encontra no campo de batalha, lutando ao lado de Napoleão.",
@@ -128,6 +164,151 @@
                         "influencia": "-1"
                     },
                     "next": "level_4_escape"
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "id": "level_3_battle_resist",
+            "context": "Você se encontra no campo de batalha, liderando forças revolucionárias que resistem ao exército de Napoleão. A batalha é intensa, e sua liderança será crucial para determinar o resultado.",
+            "options": [
+                {
+                    "id": "3.1",
+                    "action": "Inspirar as tropas com um discurso motivador",
+                    "successContext": "Seu discurso inflamou os ânimos, e suas tropas lutam com vigor renovado, ganhando terreno contra o exército de Napoleão.",
+                    "atr_success": {
+                        "influencia": "+3",
+                        "forca": "+2"
+                    },
+                    "failureContext": "Seu discurso não teve o efeito esperado, e alguns soldados começaram a desertar.",
+                    "atr_failure": {
+                        "influencia": "-2",
+                        "forca": "-1"
+                    },
+                    "next": "level_4_escape"
+                },
+                {
+                    "id": "3.2",
+                    "action": "Tentar uma emboscada estratégica",
+                    "successContext": "A emboscada foi um sucesso e causou grandes perdas ao exército de Napoleão, fortalecendo a moral dos seus aliados.",
+                    "atr_success": {
+                        "influencia": "+2",
+                        "forca": "+3"
+                    },
+                    "failureContext": "A emboscada falhou e suas tropas foram dispersas, com alguns de seus líderes capturados.",
+                    "atr_failure": {
+                        "influencia": "-2",
+                        "forca": "-3"
+                    },
+                    "next": "level_4_failure"
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "id": "level_4_victory",
+            "context": "Você se encontra ao lado de Napoleão após a vitória final. O futuro da França parece seguro, mas você percebe o custo da centralização do poder.",
+            "options": [
+                {
+                    "id": "4.1",
+                    "action": "Aceitar o novo regime",
+                    "successContext": "Você se torna um dos conselheiros mais influentes de Napoleão, garantindo sua posição no novo regime.",
+                    "atr_success": {
+                        "influencia": "+5",
+                        "lealdade": "+3"
+                    },
+                    "failureContext": "Seu apoio não foi recompensado como esperado, e você se sente marginalizado.",
+                    "atr_failure": {
+                        "influencia": "-2"
+                    },
+                    "next": "end"
+                },
+                {
+                    "id": "4.2",
+                    "action": "Secretamente planejar uma nova revolução",
+                    "successContext": "Sua resistência foi bem-sucedida e você é visto como um herói pela próxima geração.",
+                    "atr_success": {
+                        "influencia": "+4",
+                        "forca": "+2"
+                    },
+                    "failureContext": "Sua conspiração foi descoberta e você foi exilado do novo regime.",
+                    "atr_failure": {
+                        "influencia": "-3",
+                        "forca": "-2"
+                    },
+                    "next": "end"
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "id": "level_4_failure",
+            "context": "Após a traição contra Napoleão, você se encontra isolado e sem aliados. A derrota pesa sobre seus ombros.",
+            "options": [
+                {
+                    "id": "4.1",
+                    "action": "Aceitar o exílio",
+                    "successContext": "Você vive o resto de seus dias longe da França, refletindo sobre seus erros.",
+                    "atr_success": {
+                        "lealdade": "-2",
+                        "influencia": "-1"
+                    },
+                    "failureContext": "A vida no exílio é difícil, e você nunca mais encontra seu lugar.",
+                    "atr_failure": {
+                        "influencia": "-3"
+                    },
+                    "next": "end"
+                },
+                {
+                    "id": "4.2",
+                    "action": "Tentar retornar e buscar redenção",
+                    "successContext": "Você retorna para a França e consegue restaurar parte de sua influência.",
+                    "atr_success": {
+                        "influencia": "+2",
+                        "forca": "+1"
+                    },
+                    "failureContext": "Sua tentativa de retorno fracassa e você é capturado novamente.",
+                    "atr_failure": {
+                        "forca": "-2",
+                        "influencia": "-1"
+                    },
+                    "next": "end"
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "id": "level_4_escape",
+            "context": "Após uma fuga ousada, você lidera uma nova revolta com antigos e novos aliados. O futuro da revolução depende das suas próximas ações.",
+            "options": [
+                {
+                    "id": "4.1",
+                    "action": "Organizar um levante popular",
+                    "successContext": "O levante popular foi um sucesso e você recupera o controle de Paris.",
+                    "atr_success": {
+                        "influencia": "+4",
+                        "forca": "+3"
+                    },
+                    "failureContext": "O levante falha e a revolta é rapidamente suprimida.",
+                    "atr_failure": {
+                        "influencia": "-2",
+                        "forca": "-3"
+                    },
+                    "next": "end"
+                },
+                {
+                    "id": "4.2",
+                    "action": "Buscar apoio internacional",
+                    "successContext": "Você consegue apoio estrangeiro e aumenta sua posição de resistência.",
+                    "atr_success": {
+                        "influencia": "+3"
+                    },
+                    "failureContext": "O apoio internacional é negado, e você perde força política.",
+                    "atr_failure": {
+                        "influencia": "-2",
+                        "forca": "-1"
+                    },
+                    "next": "end"
                 }
             ]
         }
