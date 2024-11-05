@@ -1,12 +1,9 @@
 {
-    "id": "ReinadoTerror3",
-    "title": "Reinado do Terror",
-    "description": "Um período sombrio onde os jogadores navegam pelas acusações de traição, caçando ou sendo caçados pelos Comitês Revolucionários.",
     "levels": [
         {
             "level": 1,
             "id": "level_1",
-            "context": "As ruas estão cheias de rumores. O Comitê de Segurança Pública está dividido, e os revolucionários estão tomando medidas extremas. Você se encontra em uma situação onde cada movimento será cuidadosamente observado. Decisões dos Jacobinos para apoiar a Comissão de Segurança Pública",
+            "context": "As ruas estão cheias de rumores. O Comitê de Segurança Pública está dividido, e os revolucionários estão tomando medidas extremas.",
             "options": [
                 {
                     "id": "1.1",
@@ -22,13 +19,28 @@
                         "revoltaPopular": "+2"
                     },
                     "next": "level_2"
+                },
+                {
+                    "id": "1.2",
+                    "action": "Espionar os membros do Comitê",
+                    "successContext": "Suas informações revelaram planos secretos, permitindo que o Comitê tome medidas preventivas.",
+                    "atr_success": {
+                        "astucia": "+2",
+                        "influencia": "+1"
+                    },
+                    "failureContext": "A espionagem foi descoberta, colocando você sob suspeita.",
+                    "atr_failure": {
+                        "astucia": "-1",
+                        "lealdade": "-1"
+                    },
+                    "next": "level_2"
                 }
             ]
         },
         {
             "level": 2,
             "id": "level_2",
-            "context": "Decisões dos Girondinos para organizar uma manifestação popular",
+            "context": "Decisões dos Girondinos para organizar uma manifestação popular.",
             "options": [
                 {
                     "id": "2.1",
@@ -43,13 +55,28 @@
                         "influencia": "-1"
                     },
                     "next": "level_3"
+                },
+                {
+                    "id": "2.2",
+                    "action": "Organizar uma campanha de propaganda",
+                    "successContext": "A campanha conquistou muitos simpatizantes, enfraquecendo o apoio aos Jacobinos.",
+                    "atr_success": {
+                        "influencia": "+2",
+                        "oratoria": "+1"
+                    },
+                    "failureContext": "A campanha foi desmascarada como propaganda falsa, minando a confiança do público.",
+                    "atr_failure": {
+                        "influencia": "-1",
+                        "lealdade": "-1"
+                    },
+                    "next": "level_3"
                 }
             ]
         },
         {
             "level": 3,
             "id": "level_3",
-            "context": "Decisões dos Realistas para sabotar os esforços dos Jacobinos",
+            "context": "Decisões dos Realistas para sabotar os esforços dos Jacobinos.",
             "options": [
                 {
                     "id": "3.1",
@@ -65,13 +92,28 @@
                         "influencia": "-2"
                     },
                     "next": "level_4"
+                },
+                {
+                    "id": "3.2",
+                    "action": "Infiltrar espiões entre os Jacobinos",
+                    "successContext": "Os espiões forneceram informações vitais, ajudando os Realistas a enfraquecer o governo Jacobino.",
+                    "atr_success": {
+                        "astucia": "+2",
+                        "combate": "+1"
+                    },
+                    "failureContext": "A infiltração foi descoberta, e os espiões foram capturados.",
+                    "atr_failure": {
+                        "astucia": "-2",
+                        "influencia": "-1"
+                    },
+                    "next": "level_4"
                 }
             ]
         },
         {
             "level": 4,
             "id": "level_4",
-            "context": "Decisões do Povo para negociar uma trégua",
+            "context": "Decisões do Povo para negociar uma trégua.",
             "options": [
                 {
                     "id": "4.1",
@@ -84,6 +126,21 @@
                     "failureContext": "A negociação falhou, resultando em mais repressão ao povo.",
                     "atr_failure": {
                         "lealdade": "-1"
+                    },
+                    "next": "fim"
+                },
+                {
+                    "id": "4.2",
+                    "action": "Convocar um líder popular para mediar",
+                    "successContext": "O líder conseguiu unir as facções temporariamente, gerando um clima de paz.",
+                    "atr_success": {
+                        "oratoria": "+1",
+                        "lealdade": "+2"
+                    },
+                    "failureContext": "O líder foi desacreditado e perdeu apoio, resultando em mais descontentamento popular.",
+                    "atr_failure": {
+                        "oratoria": "-1",
+                        "lealdade": "-2"
                     },
                     "next": "fim"
                 }
