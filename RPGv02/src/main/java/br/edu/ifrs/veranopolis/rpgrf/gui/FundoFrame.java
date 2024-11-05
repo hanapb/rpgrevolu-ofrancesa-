@@ -10,9 +10,12 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import javax.imageio.ImageIO;
 import javax.swing.border.EmptyBorder;
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
 
 public class FundoFrame extends JFrame {
 
@@ -21,11 +24,17 @@ public class FundoFrame extends JFrame {
     protected JLabel titleLabel;
     protected TextPanel textPanel;
     protected JPanel buttonPanel;
+    private String musicaPath;
+    protected Player musicaPlayer;
 
     public FundoFrame(String nomeArquivo) {
-        // Define o JFrame como undecorated e inicia o componente
+        this(nomeArquivo, null);  // Chama o novo construtor com música nula
+    }
+
+    public FundoFrame(String nomeArquivo, String musica) {
         super("Fundo Frame");
         setUndecorated(true);
+        this.musicaPath = musica;
 
         // Tenta carregar a imagem do classpath
         try {
@@ -47,7 +56,7 @@ public class FundoFrame extends JFrame {
         backgroundPanel.setLayout(new BorderLayout());
 
         // Adiciona o título
-        titleLabel = new JLabel("Título da Janela", SwingConstants.CENTER);
+        titleLabel = new JLabel("RPG Revolução Francesa", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
         titleLabel.setForeground(Color.WHITE);
         titleLabel.setOpaque(false);
@@ -96,7 +105,7 @@ public class FundoFrame extends JFrame {
         sair.addActionListener((e) -> {
             dispose();
         });
-        */
+         */
         backgroundPanel.add(buttonPanel, BorderLayout.SOUTH);
 
         // Adiciona o painel de fundo ao JFrame
@@ -107,6 +116,34 @@ public class FundoFrame extends JFrame {
 
         // Configura o JFrame para centralizar
         setLocationRelativeTo(null);
+
+        // Toca a música se for fornecida
+        if (musicaPath != null) {
+            tocarMusica(musicaPath);
+        }
+    }
+
+    private void tocarMusica(String caminhoMusica) {
+        new Thread(() -> {
+            try (InputStream musicaStream = getClass().getResourceAsStream("/musicas/" + caminhoMusica)) {
+                if (musicaStream != null) {
+                    musicaPlayer = new Player(musicaStream);
+                    musicaPlayer.play();
+                } else {
+                    System.err.println("Arquivo de música não encontrado: " + caminhoMusica);
+                }
+            } catch (JavaLayerException | IOException e) {
+                e.printStackTrace();
+            }
+        }).start();
+    }
+    
+    @Override
+    public void dispose() {
+        if (musicaPlayer != null) {
+            musicaPlayer.close();
+        }
+        super.dispose();
     }
 
     // Painel personalizado para desenhar o fundo com a imagem
@@ -128,7 +165,7 @@ public class FundoFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-        // Exemplo de uso com nome de arquivo específico
-        new FundoFrame("fundo.png");
+        new FundoFrame("fundo.png", "ocllo.mp3").setVisible(true);
+
     }
 }

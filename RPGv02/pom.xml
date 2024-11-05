@@ -27,6 +27,12 @@
         <artifactId>jackson-core</artifactId>
         <version>2.13.3</version>
     </dependency>
+        <dependency>
+            <groupId>javazoom</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <name>RPGv02</name>
 </project>
