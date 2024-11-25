@@ -4,6 +4,7 @@
  */
 package br.edu.ifrs.veranopolis.rpgrf.gui;
 
+import br.edu.ifrs.veranopolis.rpgrf.util.SyllableSeparator;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -21,6 +22,7 @@ import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class TextPanel extends JPanel {
@@ -56,6 +58,56 @@ public class TextPanel extends JPanel {
     }
 
     private void initText() {
+        // Converte o texto para minúsculas apenas para separação
+        String lowerText = text.toLowerCase();
+
+        // Divide o texto em tokens, preservando palavras, pontuações e espaços
+        String[] tokens = lowerText.split("(?=\\W)|(?<=\\W)"); // Divide em palavras, pontuações e espaços
+
+        for (String token : tokens) {
+            List<String> elements;
+
+            // Verifica se o token é uma palavra
+            if (token.matches("^[a-zà-ÿ]+$")) {
+                if (isAcronym(token.toUpperCase())) {
+                    elements = List.of(token.toUpperCase()); // Mantém o acrônimo em maiúsculas
+                } else {
+                    // Separa em sílabas e converte cada sílaba para maiúsculas
+                    elements = Arrays.asList(SyllableSeparator.separateSyllables(token).split("-"));
+                    elements.replaceAll(String::toUpperCase);
+                }
+            } else {
+                // Para pontuações e outros caracteres, mantém o token intacto
+                elements = List.of(token.toUpperCase()); // Converte pontuações para maiúsculas também
+            }
+
+            // Adiciona elementos como JLabels
+            for (String element : elements) {
+                JLabel label = new JLabel(element) {
+                    @Override
+                    protected void paintComponent(Graphics g) {
+                        Graphics2D g2d = (Graphics2D) g;
+                        int index = letters.indexOf(this);
+                        float alpha = alphas[index];
+                        g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
+                        setOpaque(false);
+                        super.paintComponent(g);
+                    }
+                };
+
+                label.setFont(customFont);
+                label.setForeground(Color.BLACK);
+                this.add(label);
+                letters.add(label);
+            }
+        }
+
+        // Inicializa os alphas para o fade
+        alphas = new float[letters.size()];
+        Arrays.fill(alphas, 0f);
+    }
+
+    private void oldInitText() {
         for (char c : text.toCharArray()) {
             JLabel label = new JLabel(String.valueOf(c)) {
                 @Override
@@ -92,7 +144,11 @@ public class TextPanel extends JPanel {
         repaint();
     }
 
-     public void startAnimation() {
+    private boolean isAcronym(String word) {
+        return word.matches("^[A-Z]+$");
+    }
+
+    public void startAnimation() {
         currentLetterIndex = 0;
         timer = new Timer(40, new ActionListener() {
             @Override
@@ -152,7 +208,7 @@ public class TextPanel extends JPanel {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 200);
 
-        TextPanel textPanel = new TextPanel("Bem-vindo ao RPG! Prepare-se para uma aventura épica.");
+        TextPanel textPanel = new TextPanel("Bem-vindo ao RPG! Prepare-se para uma aventura épica. Olá, mundo cruel. Teste e teste.");
 
         JButton startButton = new JButton("Iniciar Animação");
         startButton.addActionListener(new ActionListener() {
