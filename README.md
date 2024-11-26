@@ -60,7 +60,7 @@ A Era Napoleônica foi o período em que Napoleão Bonaparte esteve no governo d
 Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e os valores do iluminismo se consolidaram no país. Esse período também ficou marcado por conflitos da França contra outras nações europeias, como o Reino Unido, Prússia, Áustria e Rússia. Napoleão foi derrotado em 1815, na Batalha de Waterloo, sendo deposto, preso e exilado.
 
 <img src="telainicio.png" align=center alt="Texto Alternativo">
-<img src="telajogo.png" width=75% alt="Texto Alternativo">
+<img src="telajogo.png" width=30% alt="Texto Alternativo">
 <img src="telafinal.png"  alt="Texto Alternativo" >
 
 
