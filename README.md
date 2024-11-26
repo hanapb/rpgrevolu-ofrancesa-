@@ -296,3 +296,4 @@ O projeto `JSON`, nesse caso, é uma estrutura de dados que define cenas e açõ
   ]
 }
 ``` 
+Esse porojeto utiliza o separador silábico do projeto "Annotator: Gerador de tags em texto" -- https://github.com/falabrasil/annotator -- https://doi.org/10.1186/s13173-014-0021-9
