@@ -62,7 +62,7 @@ Durante a Era Napoleônica, importantes mudanças foram realizadas na França, e
 <img src="telainicio.png" =250x250 alt="Texto Alternativo">
 <img src="telajogo.png" =250x250 alt="Texto Alternativo">
 <img src="telafinal.png" =250x250 alt="Texto Alternativo" >
-
+![](telainicio.png | width=100)****
 
 
 # Documentação do Projeto
